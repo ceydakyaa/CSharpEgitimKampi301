@@ -12,7 +12,7 @@ namespace CSharpEgitimKampi301.DataAccessLayer.EntityFramework
 {
     public class EfProductDal : GenericRepository<Product>, IProductDal
     {
-        public List<object> GetProductswithCategory()
+        public List<object> GetProductswithCategory() 
         {
             var context = new KampContext();
             var values=context.Products
